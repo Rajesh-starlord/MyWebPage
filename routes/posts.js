@@ -1,23 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var data = [
-  {
-    url:'./images/manali.jpg',
-    place:'Manali'
-  },
-  {
-    url:'./images/travel.jpg',
-    place:'Travel'
-  },
-  {
-    url:'./images/college.jpg',
-    place:'College'
-  },
-  {
-    url:'./images/hyd.jpg',
-    place:'Hyderabad'
-  }
-]
 var posts = [
   {
     url:'./images/blog-1.jpg',
@@ -40,9 +22,9 @@ var posts = [
     content:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor laborum."
   }
 ]
-/* GET home page. */
+/* GET post page. */
 router.get('/', function(req, res, next) {
-  res.render('home',{data:data,posts:posts});
+  res.render('posts',{title:'Posts',posts:posts});
 });
 
 module.exports = router;

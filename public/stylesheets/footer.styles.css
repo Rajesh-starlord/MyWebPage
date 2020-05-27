@@ -1,0 +1,65 @@
+
+.ending-message{
+  margin-bottom: 60px;
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Loto';
+}
+.footer{
+  height:fill-available;
+  width: auto;
+  background-color: black;
+  text-align: center;
+  color: #ffff;
+  margin-top: 50px;
+  padding: 20px;
+}
+div.container.end-text{
+  text-align: center;
+  border-top: 2px solid grey;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+div h2 p{
+  font-size: small;
+  font-weight: lighter;
+  color: grey;
+}
+.ftr-heading{
+  font-family: "Poppins", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+p{
+  color: grey;
+}
+ul.list{
+  text-decoration: none;
+  padding: 0px;
+}
+.list li a{
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+}
+span.text{
+  color: grey;
+  font-size: 16px;
+}
+.list li a:hover{
+  color: white;text-decoration: none;
+}
+ul li{
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+span.link{
+  color: blue;
+}
+span.link:hover{
+  text-decoration: underline;
+}
+i:hover{
+  cursor: pointer;
+}

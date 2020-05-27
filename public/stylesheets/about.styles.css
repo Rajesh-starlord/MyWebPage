@@ -1,0 +1,141 @@
+.title{
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 900;
+  letter-spacing: inherit;
+  font-size: 3rem;
+  position: absolute;
+  z-index: 100;
+  color: white;
+  left: 100px;
+  top: 60%;
+  text-shadow: 3px 2px 23px;
+}
+header{
+  height: 550px;
+  background-position: center;
+  background-size: cover;
+  background-image: url('bg_3.jpg');
+}
+.promt-message{
+    text-shadow: 0px 5px 6px;
+}
+div.container.about{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.user-profile,.education,.skills,.projects{
+  height:500px;
+  width:100%;
+  margin: 5px;
+  display: flex;
+}
+div.container.about{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sk-photo,.pr-photo,.ed-photo,.prof-photo{
+  height: inherit;
+  width: 35%;
+}
+.title-block{
+    height:65px;
+    width: 65%;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 120px;
+}
+.title-block h1{
+  font-family: 'Loto' sans-serif;
+  text-decoration: underline;
+}
+.content-about{
+  height:350px;
+  width:auto;
+  margin-top: 100px;
+  text-align: left;
+}
+.content-about h2{
+  font-size: 22px;
+}
+.project li{
+  list-style: disc;
+  margin-top: 10px;
+}
+.flex-box{
+  display: flex;
+}
+.flex-box li{
+  margin-left: 10px;
+}
+.content-about:first-child{
+  text-align: center;
+}
+.title-block:hover{
+  margin-top: 20px;
+  height: 480px;
+  transition: 0.8s;
+}
+.title-block:hover .content-about{
+  margin-top: 10px;
+  transition: 0.8s;
+}
+.user-profile:hover .title-block{
+  margin-top: 20px;
+  height: 480px;
+  transition: 0.8s;
+}
+.user-profile:hover .content-about{
+  margin-top: 10px;
+  transition: 0.8s;
+}
+.education:hover .title-block{
+  margin-top: 20px;
+  height: 480px;
+  transition: 0.8s;
+}
+.education:hover .content-about{
+  margin-top: 10px;
+  transition: 0.8s;
+}
+.skills:hover .title-block{
+  margin-top: 20px;
+  height: 480px;
+  transition: 0.8s;
+}
+.skills:hover .content-about{
+  margin-top: 10px;
+  transition: 0.8s;
+}
+.projects:hover .title-block{
+  margin-top: 20px;
+  height: 480px;
+  transition: 0.8s;
+}
+.projects:hover .content-about{
+  margin-top: 10px;
+  transition: 0.8s;
+}
+.prof-photo,.ed-photo,.sk-photo,.pr-photo{
+  background-position: center;
+  background-size: cover;
+}
+.prof-photo{
+  background-image: url('profile.jpg');
+}
+.ed-photo{
+  background-image: url('education.jpg');
+}
+.sk-photo{
+  background-image: url('skill.jpg');
+}
+.pr-photo{
+  background-image: url('project.jpg');
+}
+@media(max-width:1024px){
+  .title{
+    left: 60px;
+    top: 20%;
+  }
+}

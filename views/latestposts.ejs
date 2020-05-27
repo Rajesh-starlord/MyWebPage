@@ -1,0 +1,27 @@
+
+  <body>
+
+    <!---heading--->
+    <div class="container latest">
+      <h1>Latest&</h1>
+    </div>
+    <div class="container greatest">
+      <h1>Greatest</h1>
+    </div>
+    <!---blogs--->
+    <div class="container blog-container">
+    <%  for(var i =0; i<posts.length; i++){ %>
+        <div class="blog">
+          <div class="blog-img" style="background-image:url('<%=posts[i].url%>')">
+          </div>
+          <div class="blog-content">
+            <h1> <%= posts[i].title %> </h1>
+            <p> <%= posts[i].content %> </p>
+          </div>
+        </div>
+    <%  } %>
+    </div>
+    <!---button--->
+    <div class="container">
+      <a href="/Posts"><button type="button" name="load-blogs" class="load-blog-btn">VIEW ALL BLOGS</button></a>
+    </div>

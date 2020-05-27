@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <!---fontfamily--->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7ab9f7166a.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <!---bootstrap stylesheet--->
-    <link rel="stylesheet" href="home.styles.css">
-    <link rel="stylesheet" href="footer.styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!---bootstrap jquery--->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../lib/jquery.js"></script>
-    <script type="text/javascript" src="../lib/jquery.loadTemplate-1.4.4.min.js"></script>
-  </head>
-  <body>
 
+<%-include('head')-%>
+  <body>
     <!---navbar--->
       <nav class="navbar navbar-expand-lg nav-container">
         <a class="navbar-brand" href="/">R.k.Sidharth</a>
@@ -38,7 +18,7 @@
       </nav>
 
     <main class="main">
-      <h1 class="vr text-center">Rajesh</h1>
+      <h1 class="vr text-center">EVANS</h1>
         <!--containers--->
         <div id="carouselExampleSlidesOnly" class="carousel slide container1" data-ride="carousel">
           <div class="carousel-inner container1">
@@ -58,7 +38,6 @@
           <div class="intro">
             <div class="profile"></div>
             <div class="profile-text">
-              <div style="color:red;"><h1>It's</h1></div>
               <div><h1>Rajesh Kanahr</h1></div>
               <p style="color:limegreen;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
             </div>
@@ -115,40 +94,29 @@
           </div>
         </div>
       </div>
-      <!---context section--->
-      <div class="memo-button container">
-        <a href="/Gallery"><button class="btn"><h1>Memories</h1></button></a>
+      <!--posts--->
+      <%-include('latestposts')-%>
+      <!---memo section--->
+      <div class="container" style="margin-top:35px;margin-bottom:35px;">
+        <h1 style="font-family:serif;">Memories</h1>
+      </div>
+      <div class="container card-container-memories">
+        <div class="row">
+          <%  for(var i =0; i<posts.length; i++){ %>
+              <div class="memo-cards col-lg-3 col-md-6">
+                <div class="memo-img-container">
+                  <div class="memo-img" style="background-image:url('<%=data[i].url%>')"></div>
+                </div>
+                <div class="memo-content">
+                  <h1> <%= data[i].place %> </h1>
+                </div>
+              </div>
+          <%  } %>
+        </div>
       </div>
 
-      <div class="container-fluid card-container-memories">
-        <div class="card cards " style="width: 18rem;">
-          <div class="card-img"><img class="card-img-top" src="manali.JPG"></div>
-          <div class="card-body">
-            <a href="#" class="btn btn-primary">Manali</a>
-          </div>
-        </div>
-
-        <div class="card cards " style="width: 18rem;">
-          <div class="card-img"><img class="card-img-top" src="travel.JPG"></div>
-          <div class="card-body">
-            <a href="#" class="btn btn-primary">Travel</a>
-          </div>
-        </div>
-
-        <div class="card cards " style="width: 18rem;">
-          <div class="card-img"><img class="card-img-top" src="college.JPG"></div>
-          <div class="card-body">
-            <a href="#" class="btn btn-primary">College</a>
-          </div>
-        </div>
-
-        <div class="card cards " style="width: 18rem;">
-          <div class="card-img"><img class="card-img-top" src="hyd.JPG"></div>
-          <div class="card-body">
-            <a href="#" class="btn btn-primary">Hyderabad</a>
-          </div>
-        </div>
-
+      <div class="container">
+        <a href='/Gallery'><button type="button" name="load-gallery" class="load-blog-btn">VIEW ALL</button></a>
       </div>
       <!---message--->
         <div class="container">
@@ -157,4 +125,5 @@
             <p>Never Give Up...</p>
           </div>
         </div>
-    <%-include("footer")-%>
+
+  <%-include('footer')-%>
