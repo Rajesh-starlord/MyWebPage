@@ -58,7 +58,7 @@ a.nav-item.nav-link:hover {
   display: flex;
   background-position-x: 100px;
   background-size: cover;
-  background-image: url('../Black-1.png');
+  background-image: url('../images/Black-1.png');
 }
 .main h1.vr {
   font-family: "Barlow Condensed", Arial, sans-serif;
@@ -164,16 +164,16 @@ div.container.thoughts{
   padding: 0px;
 }
 .th-img1,.th-img2{
-    width:30%;
+    width:35%;
     height: inherit;
     background-position: center;
     background-size: cover;
 }
 .th-img1{
-  background-image: url('../images/man.jpg');
+  background-image: url('../images/reachbeyond.jpg');
 }
 .th-img2{
-  background-image: url('../images/beer.jpg');
+  background-image: url('../images/music.jpg');
 }
 .message-box{
     width: 70%;
@@ -187,9 +187,10 @@ div.container.thoughts{
   overflow: hidden;
   font-family: 'Loto';
 }
-.message:hover{
-  max-height:200px;
-  transition: 1.2s;
+div.thoughts:hover .message{
+  max-height:210px;
+  margin-top: 40px;
+  transition: 0.8s;
   cursor: pointer;
 }
 .message h1{
@@ -269,6 +270,7 @@ div.ed-card i h1,p{
   }
   .main{
     height:500px;
+    background-position-x:200px;
   }
   .container1,.container2{
     width:50%;
@@ -286,6 +288,10 @@ div.ed-card i h1,p{
   .intro-section{
     max-height: 400px;
     padding: 0px 10%;
+  }
+  .message{
+    max-height: 210px;
+    margin-top: 40px;
   }
 
 }

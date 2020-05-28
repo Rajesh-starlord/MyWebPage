@@ -46,3 +46,10 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+/*"Live your truth. Express your love. 
+Share your enthusiasm.
+Take action towards your dreams.
+Walk your talk.
+Dance and sing to your music.
+Embrace your blessings.
+Make today worth remembering.”*/
