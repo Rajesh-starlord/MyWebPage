@@ -37,11 +37,22 @@ div.container.blog-container{
 div.blog{
     padding: 0px;
 }
-.blog-img{
+.blog div div.blog-img{
+  height: 100%;
+  width: auto;
+  background-position: center;
+  background-size: cover;
+}
+.blog div{
+  overflow: hidden;
   height: 45%;
   width: auto;
   background-position: center;
   background-size: cover;
+}
+.blog:hover div.blog-img{
+transform: scale(1.1);
+transition: 0.5s;
 }
 .blog-content{
   margin-top: 15px;

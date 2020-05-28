@@ -56,7 +56,9 @@ a.nav-item.nav-link:hover {
 .main{
   height: 600px;
   display: flex;
-  background-color: black;
+  background-position-x: 100px;
+  background-size: cover;
+  background-image: url('../Black-1.png');
 }
 .main h1.vr {
   font-family: "Barlow Condensed", Arial, sans-serif;
@@ -67,7 +69,7 @@ a.nav-item.nav-link:hover {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-size: 24vw;
+  font-size: 34vw;
   text-transform: uppercase;
   z-index: 1;
   color: #fff;
@@ -81,24 +83,12 @@ a.nav-item.nav-link:hover {
   height: inherit;
   width: 40%;
 }
-.container2{
-  height: inherit;
-  width: 60%;
-}
-.container2{
-  background-color: black;
-}
-.main-img,.main-img1,.main-img2{
+.main-img{
   background-position: center;
   background-size: cover;
   background-position-y: initial;
   height: inherit;
-}
-.main-img1{
   background-image: url('../images/rks.JPG');
-}
-.main-img2{
-    background-image: url('https://www.itl.cat/pngfile/big/92-920251_iron-man-simple-3-iphone-6-hd-4k.jpg');
 }
 .intro-section{
   height: -webkit-fill-available;
@@ -287,7 +277,7 @@ div.ed-card i h1,p{
     width:100%;
   }
   .main h1.vr{
-    top:25%;
+    top:17%;
   }
   .card-container-memories{
     margin-bottom: 50px
