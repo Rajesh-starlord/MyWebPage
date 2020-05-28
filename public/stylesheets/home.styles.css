@@ -284,7 +284,8 @@ div.ed-card i h1,p{
     margin-bottom: 50px
   }
   .intro-section{
-    max-height: 370px;
+    max-height: 400px;
+    padding: 0px 10%;
   }
 
 }
