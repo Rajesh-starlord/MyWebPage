@@ -2,19 +2,19 @@ var express = require('express');
 var router = express.Router();
 var data = [
   {
-    url:'./images/manali.jpg',
+    url:'./images/manali.JPG',
     place:'Manali'
   },
   {
-    url:'./images/travel.jpg',
+    url:'./images/travel.JPG',
     place:'Travel'
   },
   {
-    url:'./images/college.jpg',
+    url:'./images/college.JPG',
     place:'College'
   },
   {
-    url:'./images/hyd.jpg',
+    url:'./images/hyd.JPG',
     place:'Hyderabad'
   }
 ]
