@@ -92,6 +92,7 @@ a.nav-item.nav-link:hover {
 }
 .intro-section{
   height: -webkit-fill-available;
+  max-height: 480px;
 }
 .profile{
   height:200px;
@@ -277,10 +278,13 @@ div.ed-card i h1,p{
     width:100%;
   }
   .main h1.vr{
-    top:19%;
+    top:20%;
   }
   .card-container-memories{
     margin-bottom: 50px
+  }
+  .intro-section{
+    max-height: 370px;
   }
 
 }
